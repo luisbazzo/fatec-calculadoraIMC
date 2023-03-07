@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Projeto 02 - Calculadora de IMC</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-imc">
+                
+                <h2>Calculadora de IMC</h2>
+
+                <div class="form-content">
+                    <input type="text" id="altura" required>
+                    <label>Altura</label>
+                </div><!--form-content-->
+
+                <div class="form-content">
+                    <input type="text" id="peso" required>
+                    <label>Peso</label>
+                </div><!--form-content-->
+
+                <h3>Selecione o seu gênero</h3>
+
+                <div class="form-gen">
+                    <input type="checkbox" id="woman-check">
+                    <ion-icon name="woman" id="woman-ico"></ion-icon>
+                    <input type="checkbox" id="man-check">
+                    <ion-icon name="man" id="man-ico"></ion-icon>
+                </div><!--form-gen-->
+                <div class="clear"></div><!--clear-->
+
+                <button type="button" onclick="calcIMC()">Calcular IMC</button>
+
+                <div class="form-result">
+                    <textarea id="resp" readonly></textarea>
+                </div><!--form-result-->
+
+            </div><!--form-imc-->
+        </div><!--form-box-->
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
