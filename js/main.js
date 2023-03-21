@@ -49,3 +49,11 @@ function pesoIdeal(){
     document.getElementById("resp").value += "\nO seu peso ideal é próximo de: " + pesoId.toFixed(2) + " kg.";
     
 }
+
+function limpar(){
+    document.getElementById("resp").value = "";
+    document.getElementById("altura").value = "";
+    document.getElementById("peso").value = "";
+    document.getElementById("man-check").checked = false;
+    document.getElementById("woman-check").checked = false;
+}

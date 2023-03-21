@@ -28,14 +28,21 @@
                 <h3>Selecione o seu gênero</h3>
 
                 <div class="form-gen">
-                    <input type="checkbox" id="woman-check">
-                    <ion-icon name="woman" id="woman-ico"></ion-icon>
-                    <input type="checkbox" id="man-check">
-                    <ion-icon name="man" id="man-ico"></ion-icon>
+                    <div class="gender-icon">
+                        <input type="checkbox" id="woman-check">
+                        <ion-icon name="woman" id="woman-ico"></ion-icon>
+                    </div><!--gender-icon-->
+                    <div class="gender-icon">
+                        <input type="checkbox" id="man-check">
+                        <ion-icon name="man" id="man-ico"></ion-icon>
+                    </div><!--gender-icon-->
                 </div><!--form-gen-->
                 <div class="clear"></div><!--clear-->
 
-                <button type="button" onclick="calcIMC()">Calcular IMC</button>
+                <div class="form-calcular">
+                    <button type="button" onclick="calcIMC()">Calcular IMC</button>
+                    <ion-icon name="trash-bin" id="limpar-ico" onclick="limpar()"></ion-icon>
+                </div><!--form-calcular-->
 
                 <div class="form-result">
                     <textarea id="resp" readonly></textarea>

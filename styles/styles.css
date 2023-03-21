@@ -12,12 +12,17 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background-color: red;
+    background-image: url('../imagens/cartoon-gym.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form-box{
     position: relative;
-    background-color: green;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
     width: 600px;
     height: 750px;
     align-items: center;
@@ -94,6 +99,11 @@ h3{
     margin-right: auto;
 }
 
+.gender-icon{
+    display: inline-block;
+    margin-left: 84px;
+}
+
 #man-ico{
     color: rgb(42, 192, 242);
 }
@@ -103,9 +113,23 @@ h3{
     padding-right: 50px;
 }
 
+#limpar-ico{
+    color: red;
+    position: relative;
+    margin-left: 20px;
+    top: 12px;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.form-calcular{
+    width: 100%;
+    height: 100%;
+}
+
 button{
     width: 75%;
-    margin-left: 50px;
+    margin-left: 20px;
     height: 50px;
     border-radius: 40px;
     margin-top: 10px;
@@ -129,6 +153,7 @@ button{
     margin-top: 20px;
     height: 120px;
     resize: none;
+    border-radius: 15px;
 }
 
 .clear{
